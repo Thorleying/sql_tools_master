@@ -1,18 +1,39 @@
-# Vue 3 + TypeScript + Vite
+# 自动生成SQL项目
+这个项目是一个使用Node.js作为后端，Vue 3、TypeScript、Vite作为前端技术栈的自动生成SQL工具。它能够根据提供的数据模型自动生成SQL语句。
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 安装
+1.克隆本仓库到本地
 
-## Recommended IDE Setup
+```
+git clone https://github.com/Thorleying/sql_tools_master.git
+```
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+2.安装依赖
 
-## Type Support For `.vue` Imports in TS
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+```
+cd sql_tools_master && npm install
+```
+3.启动应用
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+```
+npm run dev
+```
+4.打开浏览器，访问 http://localhost:3000 即可使用。
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## 功能介绍
+该应用程序具有以下功能：
+
+### 自动生成SQL语句
+1.可以根据提供的数据字段模拟生成插入数据。
+### 自定义SQL语句
+1.支持自定义SQL语句的编辑和执行。
+### 复制SQL语句
+1.支持将生成的SQL语句复制使用。
+
+## 技术栈
+### 后端：Node.js
+### 前端：Vue 3、TypeScript、Vite
+### 数据库：MySQL
+## 版权信息
+#### 该项目供学生参考使用，maker by Thorleying
